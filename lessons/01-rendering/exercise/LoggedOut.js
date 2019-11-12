@@ -7,5 +7,17 @@ import About from "app/About"
 // export default LoggedOut
 
 export default function LoggedOut() {
-  return <div className="LoggedOut">{/* Your work here */}</div>
+  return <div className="LoggedOut">
+    <About/>
+    <Tabs>
+      <TabList/>
+      <Tab>Sign in</Tab>
+      <Tab>Sign up</Tab>
+      <TabPanels>
+        <TabPanel><LoginForm/></TabPanel>
+        <TabPanel><SignupForm/></TabPanel>
+      </TabPanels>
+    </Tabs>
+    </div>
+  
 }

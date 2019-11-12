@@ -13,7 +13,9 @@ import ReactDOM from "react-dom"
 /**********************************************************/
 // All React needs to render is a dom element, and a react element
 
-// const reactElement = <div>Heyooooooo</div>
+/* You can also render ReactBlessed to CLI and ReactNative to mobile UI */
+
+// const reactElement = <div>Heyooooooo</div> /* This is originally React.createElement(); */
 // const domElement = document.getElementById("root")
 
 // // and away we go!
@@ -36,6 +38,9 @@ import ReactDOM from "react-dom"
 // The first argument is the type, the second is the attributes, but we call
 // them `props` in React (we’ll get back to that) and the rest of the arguments
 // are the children
+
+/* cool icons from FaPlus - import { FaPlus } from 'react-icons/fs'; 
+The reason it uses className is because it favors the JS name on the DOM. */
 
 // const reactElement = React.createElement(
 //   "button",
@@ -60,6 +65,7 @@ import ReactDOM from "react-dom"
 //     "Add"
 //   )
 // )
+/* style us an object in React. */
 
 // const domElement = document.getElementById("root")
 // ReactDOM.render(reactElement, domElement)
