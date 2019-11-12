@@ -118,8 +118,8 @@ export default function NewPost({ takeFocus, date, onSuccess, showAvatar }) {
 // Events make us think about time, which is hard. State is a snapshot, making
 // everything easier to keep track of.
 //
-// Enter: useEffect.
-//
+// Enter: useEffect. /* Things that normally go in componentdidmount & componentdidupdate goes here. fetch, change document title, maybe even firing google pixels and tags etc... */
+// 
 // Again, this is weird what we're doing, but we want to explain useEffect in a
 // way that helps us understand the entire model of React, not just useEffect.
 //
@@ -133,7 +133,9 @@ export default function NewPost({ takeFocus, date, onSuccess, showAvatar }) {
 //
 // The second argument to useEffect allows us to plug our effect into React's
 // synchronization of state to the user interface--extending it beyond just DOM
-// elements.
+// elements. 
+
+/* useeffect with a second argument that is a variable, it'll change every time the variable changes, no second argument means run every render, empty array will gaurantee running once */
 //
 // React will hang on to our old array values and diff them against a our new
 // values to decide if it should perform the side-effect or not. This should
