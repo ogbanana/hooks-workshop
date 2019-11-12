@@ -11,8 +11,12 @@ ReactDOM.render(<App />, document.getElementById("root"))
 /******************************************************************************/
 // Let's make our own hooks :O
 
+/*useState returns an array, so we will destructure the array for easy access.*/
+/*Cannot use conditionals in useState, however you can useState in a child component and conditionally render that instead. */
+/*useState does not merge like in class components. It'll overwrite previous state. */
+
 // function Minutes() {
-//   const [minutes, setMinutes] = useState(5)
+//   const [minutes, setMinutes] = useState(5) 
 //   const [error, setError] = useState(null)
 
 //   const handleAdd = () => {
@@ -73,6 +77,8 @@ ReactDOM.render(<App />, document.getElementById("root"))
 //     </div>
 //   )
 // }
+
+/* React creates an element then generates a diff and remove or add the diff to the DOM, or react DOM. */
 
 // const states = []
 // let calls = -1
