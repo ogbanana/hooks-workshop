@@ -15,7 +15,8 @@ import ReactDOM from "react-dom"
 
 /* You can also render ReactBlessed to CLI and ReactNative to mobile UI */
 
-// const reactElement = <div>Heyooooooo</div> /* This is originally React.createElement(); */
+// const reactElement = <div>Heyooooooo</div> 
+/* This was originally React.createElement(); */
 // const domElement = document.getElementById("root")
 
 // // and away we go!

@@ -89,11 +89,13 @@ export default function Avatar({ uid, size = 50, bg, className, ...rest }) {
 //   const posts = null
 
 //   useEffect(() => {
+//     let mounted = true  
 //     fetchUser(uid).then(user => {
 //       console.log(user)
 //       setUser(user)
 //     })
-//   })
+//        return () => (mounted = false) 
+//   }, [uid])
 
 //   if (!user) {
 //     return (

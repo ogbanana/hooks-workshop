@@ -8,16 +8,22 @@ import About from "app/About"
 
 export default function LoggedOut() {
   return <div className="LoggedOut">
-    <About/>
     <Tabs>
-      <TabList/>
-      <Tab>Sign in</Tab>
-      <Tab>Sign up</Tab>
-      <TabPanels>
-        <TabPanel><LoginForm/></TabPanel>
-        <TabPanel><SignupForm/></TabPanel>
-      </TabPanels>
-    </Tabs>
+      <TabList>
+        <Tab>Sign Up</Tab>
+        <Tab>Log in</Tab>
+      </TabList>
+        <TabPanels>
+          <TabPanel>
+            <SignupForm/>
+          </TabPanel>
+          <TabPanel>
+            <LoginForm/>
+            </TabPanel>         
+          </TabPanels>
+        
+      </Tabs>
+    <About/>
     </div>
   
 }
